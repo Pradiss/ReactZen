@@ -39,7 +39,7 @@ const Perfil = () => {
     <>
         <Header/>
 
-        <main className="bg-lite py-5" key={usuarios.IdUsuario}>
+        <main className="bg-lite py-5 sectionRadiusTop" key={usuarios.IdUsuario}>
             <div className="container">
                 <div className="main-body">
                     <div className='row gutters-sm'>
@@ -252,8 +252,8 @@ const Perfil = () => {
                                                 <hr/>
                                                 <div className='col-sm-12  py-4'>
                                                 <Link to={`/editar/${idUsuario}`} className="btnDefault">
-    Editar <i className="bi bi-arrow-right ms-4"></i>
-</Link>
+                                                     Editar <i className="bi bi-arrow-right ms-4"></i>
+                                                </Link>
 
                                                 </div>
                                             </div>

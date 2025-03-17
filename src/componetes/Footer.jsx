@@ -29,7 +29,7 @@ const Footer = () => {
                     <hr className="w-75"/>
                 
                     <p class="col-11">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.  
+                     Junte-se a nós e faça parte desse movimento que valoriza talentos e impulsiona a cena musical. 
                     </p>
                 </div>
                 
@@ -38,13 +38,19 @@ const Footer = () => {
 
                     <ul class="list-unstyled">
                     <li class="mb-4">
-                        <a href="/" class="text-white">Ínicio</a>
+                        <a href="/" class="text-white text-decoration-none">Ínicio</a>
                     </li>
                     <li class="mb-4">
-                        <a href="/categorias" class="text-white">Categoria</a>
+                        <a href="/categorias" class="text-white text-decoration-none">Categoria</a>
                     </li>
                     <li class="mb-4">
-                        <a href="/perfil" class="text-white">Perfil</a>
+                        <a href="/contato" class="text-white text-decoration-none">Contato</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="/sobre" class="text-white text-decoration-none">Sobre Nós</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="/perfil" class="text-white text-decoration-none">Perfil</a>
                     </li>
                     
                     
@@ -56,10 +62,10 @@ const Footer = () => {
 
                     <ul class="list-unstyled">
                     <li class="mb-4">
-                        <a href="/contato" class="text-white">Trabalhe conosco</a>
+                        <a href="/contato" class="text-white text-decoration-none">Trabalhe conosco</a>
                     </li>
                     <li class="mb-4">
-                        <a href="/suporte" class="text-white">Suporte</a>
+                        <a href="/suporte" class="text-white text-decoration-none">Suporte</a>
                     </li>
                     
                  
@@ -70,11 +76,22 @@ const Footer = () => {
                     <h5 class="text-uppercase mb-0 mb-4 fw-bold">Contato</h5>
                     <ul class="list-unstyled">
                     <li class="mb-4">
-                        <a href="#!" class="text-white "><i className="bi bi-envelope fs-2 me-2"></i>E-mail: emaildaempresa@gmail.com
+                    <a
+                        href="https://maps.app.goo.gl/UuAWvXXGZGD1BNG38"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white text-decoration-none"
+                        ><i className="bi bi-map fs-2 me-2"></i>
+                        R. Quadros Sobrinho, 1 - Centro, Limeira - SP, 13480-223ua Sacramento, 490 - Centro, Campinas - SP
+                        </a>
+
+                    </li>
+                    <li class="mb-4">
+                        <a href="mailto:zen@gmail.com" class="text-white text-decoration-none"><i className="bi bi-envelope fs-2 me-2"></i>E-mail: zen@gmail.com
                         </a>
                     </li>
                     <li class="mb-4">
-                        <a href="#!" class="text-white"><i className="bi bi-phone fs-2 me-2"></i>Telefone: (19) 4002-8922</a>
+                        <a href="tel:19989111857" class="text-white text-decoration-none"><i className="bi bi-phone fs-2 me-2"></i>Telefone: (19)199891-11857</a>
                     </li>
                     <li class="mb-5">
                         <a href="#!" class="text-white"></a>
@@ -101,16 +118,16 @@ const Footer = () => {
 
                 
                 <div className="col-3">
-                    <a href="/politica" class="text-white fw-bold">Política de Privacidade</a>
+                    <a href="/politica" class="text-white fw-bold text-decoration-none">Política de Privacidade</a>
                 </div>
 
 
                 <div className="col-6 text-center">
-                © 2020 Copyright: <a class="text-white fw-bold" href="/">Zene</a>
+                © 2025 Copyright: <a class="text-white fw-bold text-decoration-none" href="/">Zene</a>
                 </div>
 
                 <div className="col-3 text-end">
-                    <a href="/termos" class="text-white fw-bold ">Termos de Uso</a>
+                    <a href="/termos" class="text-white fw-bold text-decoration-none ">Termos de Uso</a>
                 </div>
             </div>
             

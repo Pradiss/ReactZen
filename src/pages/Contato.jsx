@@ -12,7 +12,7 @@ const Contato = () => {
                             <div className='p-3'>
                                 <div className='p-1'>
                                     <h2 className="display-3">Contato</h2>
-                                    <p className="mb-5">Send a message and our team will get back to within 24 hrs</p>
+                                    <p className="mb-5">Envie uma mensagem e nossa equipe entrará em contato dentro de 24 horas</p>
                                     <input type="nome" id="nome" name="nome" className="form-control p-3  rounded-5 bg-tertiary" placeholder="Digite seu Nome" />
                                 </div>
                                 <div className=''>
@@ -35,8 +35,8 @@ const Contato = () => {
                             <h5 className="text-secondary text-regular">Localização</h5>
                             <hr />
                             <p className="text-dark">
-                                📍 <strong>Senac Campinas</strong> <br />
-                                Rua Sacramento, 490 - Centro, Campinas - SP
+                                📍 <strong>Senac Limeira</strong> <br />
+                                R. Quadros Sobrinho, 1 - Centro, Limeira - SP, 13480-223
                             </p>
                             
                             <h5 className="text-secondary mt-4">Horário de Funcionamento</h5>
@@ -60,22 +60,22 @@ const Contato = () => {
                             <hr />
                             <ul className="list-unstyled d-flex">
                                 <li className="me-3">
-                                    <a href="https://www.instagram.com/senacsp" target="_blank" rel="noopener noreferrer" className="text-dark">
+                                    <a href="" target="_blank" rel="noopener noreferrer" className="text-dark">
                                         <i className="bi bi-instagram fs-3"></i>
                                     </a>
                                 </li>
                                 <li className="me-3">
-                                    <a href="https://www.facebook.com/senacsp" target="_blank" rel="noopener noreferrer" className="text-dark">
+                                    <a href="" target="_blank" rel="noopener noreferrer" className="text-dark">
                                         <i className="bi bi-facebook fs-3"></i>
                                     </a>
                                 </li>
                                 <li className="me-3">
-                                    <a href="https://wa.me/5519989111857" target="_blank" rel="noopener noreferrer" className="text-dark">
+                                    <a href="" target="_blank" rel="noopener noreferrer" className="text-dark">
                                         <i className="bi bi-whatsapp fs-3"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.linkedin.com/school/senacsp/" target="_blank" rel="noopener noreferrer" className="text-dark">
+                                    <a href="" target="_blank" rel="noopener noreferrer" className="text-dark">
                                         <i className="bi bi-linkedin fs-3"></i>
                                     </a>
                                 </li>

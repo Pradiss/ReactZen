@@ -7,6 +7,9 @@ import FiltroGenero from "../componetes/FiltroGenero";
 import FiltroCidades from "../componetes/FiltroCidade";
 import FiltroInstrumentos from "../componetes/FiltroInstrumentos";
 import { Link } from "react-router-dom";
+import SearchPage from "./SearchPage";
+import SearchBar from "./SearchBar";
+import SearchResults from "./SearchResults";
 
 
 const Categorias = () => {
@@ -62,16 +65,11 @@ const Categorias = () => {
                     <div className="row">
                         <div className="col-md-4 rounded-5 p-4 shadow">
                             <h2 className="display-5 fw-bold"><i className="bi bi-x-diamond-fill me-2"></i>Filtros</h2>
-                            
-                            <div class="input-group mt-4">
-                                <input type="text" class="form-control rounded-start-5" value=""/>
-                                <span class="input-group-btn">
-                                    <button class="btn btn-white border rounded-end-5" type="button"><i class="bi bi-search"></i></button>
-                                </span>
-                            </div>
-                            <div className="mt-4 p-2">
-                                <h4 className="fw-bold ">Categorias</h4>
                                 <hr></hr>
+                            
+                            
+                            <div className=" ">
+                                
 
                                 <FiltroInstrumentos
                                 filtroInstrumento={filtroInstrumento}
@@ -106,9 +104,11 @@ const Categorias = () => {
                         <div className="col-md-8 p-4">
                             <h2 className="display-5 fw-bold"> Resultado</h2>
                             <hr/>
+                            <SearchPage />
+                            
                             <div className="row">
                                     
-                                
+                          
                                 {usuarios.map((objUsuarios)=>(
                                 <div className='col-12 col-sm-6 col-md-6 col-lg-4 p-2 ' key={objUsuarios.idUsuario}>
                                     <div className=' rounded-5 p-3 sombra ' >

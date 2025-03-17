@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import React, { useEffect, useState} from "react"
 import axios from "axios";
+import SearchPage from "../pages/SearchPage";
+import SearchBar from "../pages/SearchBar";
 
 
 const Header = () => {
@@ -26,13 +28,17 @@ const Header = () => {
 
       </div>
 
-      <div class="input-group w-50  rounded-5 ">
+      {/* <div class="input-group w-25  rounded-5 ">
+        
         <input type="text" class="form-control rounded-start-5 " value=""/>
         
           <button class="btn btn-white border rounded-end-5   " type="button"><i class="bi bi-search fs-4"></i></button>
         
-      </div>
+      </div> */}
+      <SearchBar />
      
+       
+    
         
      
       
@@ -62,6 +68,9 @@ const Header = () => {
               </li>
               <li class=" bborder nav-item  rounded-5 p-3 me-2 ">
                 <a class="nav-link   " aria-current="page" href="/contato">Contato</a>
+              </li>
+              <li class=" bborder nav-item  rounded-5 p-3 me-2 ">
+                <a class="nav-link   " aria-current="page" href="/sobre">Sobre Nós</a>
               </li>
               <li class="bborder nav-item rounded-5 p-3 ">
                 <Link class="nav-link " to={`/perfil/${usuarios.idUsuario}`}>Perfil</Link>
