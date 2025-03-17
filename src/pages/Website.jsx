@@ -285,7 +285,7 @@ const Website = () => {
                 </p>
                 <div class="row mt-5">
                   <div class="col-md-3 ">
-                    <div class="p-4 card shadow rounded-5 text-start">
+                    <div class="py-4 px-3 card shadow rounded-5 text-start">
                       <h5 class="fw-bold">1. Crie Seu Perfil</h5>
                       <p class="text-muted">
                         Cadastre-se gratuitamente e preencha suas informações,
@@ -299,11 +299,12 @@ const Website = () => {
                   </div>
 
                   <div class="col-md-3 ">
-                    <div class="card shadow rounded-5 p-4 text-start">
+                    <div class="card shadow rounded-5 py-4 px-3 text-start">
                       <h5 class="fw-bold">2. Mostre Seu Talento</h5>
                       <p class="text-muted">
                         Adicione vídeos, áudios e fotos para apresentar seu
                         trabalho e atrair contratantes e fãs.
+                        Transforme sua arte em renda!
                       </p>
                       <a href="#" id="btnCard" class="btn btn-primary">
                         Adicionar Portfólio
@@ -312,20 +313,20 @@ const Website = () => {
                   </div>
 
                   <div class="col-md-3 ">
-                    <div class="p-4 card shadow rounded-5 text-start">
-                      <h5 class="fw-bold">3. Conecte-se com Oportunidades</h5>
+                    <div class="py-4 px-3 card shadow rounded-5 text-start">
+                      <h5 class="fw-bold ">3. Conecte-se com Oportunidades</h5>
                       <p class="text-muted">
-                        Explore eventos, gigs e convites de produtores. Negocie
+                        Explore eventos,  e convites de produtores. Negocie
                         diretamente com quem precisa do seu talento.
                       </p>
                       <a href="#" id="btnCard" class="btn btn-primary">
-                        Procurar Gigs
+                        Procurar eventos
                       </a>
                     </div>
                   </div>
 
                   <div class="col-md-3 ">
-                    <div class="p-4 card shadow rounded-5 text-start">
+                    <div class="py-4 px-3 card shadow rounded-5 text-start">
                       <h5 class="fw-bold">4. Comece a Monetizar</h5>
                       <p class="text-muted">
                         Receba pagamentos por shows, participações e
