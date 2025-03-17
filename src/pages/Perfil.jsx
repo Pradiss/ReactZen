@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Header from "../componetes/Header";
 import Footer from "../componetes/Footer";
+import { Link } from "react-router-dom";
 
 const Perfil = () => {
     const [usuarios, setUsuarios] = useState([]);
@@ -249,7 +250,9 @@ const Perfil = () => {
                                                 </div>
                                                 <hr/>
                                                 <div className='col-sm-12  py-4'>
-                                                    <a href="/editar" class="btnDefault " >Editar<i className="bi bi-arrow-right ms-4"></i></a>
+                                                <Link to={`/editar/${idUsuario}`} className="btnDefault">
+                                                 Editar <i className="bi bi-arrow-right ms-4"></i>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>

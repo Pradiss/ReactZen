@@ -6,23 +6,12 @@ import { Link } from "react-router-dom"
 
 
 const Website = () =>{
-    // const [categorias, setCategorias] = useState([])
+    
     const [usuarios, setUsuarios] = useState([])
     const [categorias, setCategorias] = useState([])
     
 
-    //é executado com um efeito colateral, ou seja, a resposta de alguma coisa
-    //neste caso, ele será executado sempre que página for carregada 
-   
-//     // const token = localStorage.getItem("token");
-//     const token = "247fc3f23a4187f3a070dc46c067928e3d1614adfed2691e2d482dfc3d5d4575542343452ca44f3e";
-//     // eslint-disable-next-line react-hooks/exhaustive-deps
-//     const authHeader = {
-//     headers: {
-//       // Authorization: `Basic ${btoa('admin@example.com:password')}`,
-//       Authorization: `Bearer ${token}`,
-//     },
-//   }
+  
 
     
 
@@ -117,12 +106,12 @@ const Website = () =>{
                             <div className='col-10 col-sm-6 col-md-6 col-lg-3 p-2  '>
                             <div className='rounded-5 p-3 sombra ' >
                             <img src={objUsuarios.foto} className='card-img-top rounded-5' alt='...'/>
-                                <div className='text-center'>
+                                <div className='text-center mb-4'>
                                     <h4 className='mt-4'>{objUsuarios.nome}</h4>
-                                    <p className='text-secondary mb-1 text-dark '>{objUsuarios.idInstrumento} | </p>
+                                    <p className='text-secondary mb-1 text-dark '>{objUsuarios.idInstrumento} | {objUsuarios.idCategoria} </p>
                                     
                                     <p className=' text-secondary mb-5'>{objUsuarios.cidade} | {objUsuarios.preco}</p>
-                                    <Link  to={`/perfil/${objUsuarios.idUsuario}`} id="btnCard">Perfil</Link>
+                                    <Link  to={`/perfil/${objUsuarios.idUsuario}`} id="btnCard" className="">Perfil</Link>
                                 </div>
                             </div>
                         </div>

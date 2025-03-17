@@ -46,8 +46,8 @@ const Cadastro = () => {
                 <div className="row d-flex justify-content-center py-5">
                     <div className="card rounded-5 p-5 col-12 col-md-8 col-lg-6 col-xl-5">
                         <div className="text-center">
-                            <h4 className="text-center text-uppercase">Faça seu cadastro</h4>
-                            <p>Cadastre-se</p>
+                            <h4 className="text-center display-5 text-capitalize fw-medium">Faça seu cadastro</h4>
+                            <p className="text-dark-50 mb-4">Bem-vindo ao <strong>Zen</strong>!!</p>
                         </div>
 
                         {/* Exibe mensagens de erro */}

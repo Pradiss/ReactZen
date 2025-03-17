@@ -15,6 +15,7 @@ import Politica from './pages/Politica.jsx'
 import Termos from './pages/Termos.jsx'
 import Contato from './pages/Contato.jsx'
 import Suporte from './pages/Suporte.jsx'
+import EditarPerfil from './pages/Editar.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -30,6 +31,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/termos" element={<Termos/>}/>
           <Route path="/contato" element={<Contato/>}/>
           <Route path="/suporte" element={<Suporte/>}/>
+          <Route path="/editar/:idUsuario" element={<EditarPerfil/>}/>
         </Routes>
     </BrowserRouter>
   </React.StrictMode>
