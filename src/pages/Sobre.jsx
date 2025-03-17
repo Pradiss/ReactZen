@@ -27,8 +27,8 @@ const Sobre = () => {
           />
         </div>
         <div className="col-lg-6 mt-5" data-aos="fade-left">
-          <h2 className="fw-bold">Dos Salões do Senac para o Mundo</h2>
-          <p className="text-muted fs-5">
+          <h2 className="fw-bold display-4">Dos Salões do Senac para o Mundo</h2>
+          <p className="text-muted mt-4 fs-5">
             Nossa jornada começou no <strong>Senac Campinas</strong>, onde um grupo de alunos apaixonados por música e tecnologia teve a ideia de criar uma plataforma que conectasse músicos a novas oportunidades. 
             O que começou como um projeto acadêmico, rapidamente se tornou uma solução inovadora para a cena musical nacional.
           </p>
@@ -45,8 +45,8 @@ const Sobre = () => {
           />
         </div>
         <div className="col-lg-6 mt-5 " data-aos="fade-right">
-          <h2 className="fw-bold">Nosso Propósito</h2>
-          <p className="text-muted fs-5">
+          <h2 className="fw-bold display-4">Nosso Propósito</h2>
+          <p className="text-muted mt-4 fs-5">
             Somos uma plataforma dedicada a transformar o mercado da música nacional, conectando músicos de todos os estilos e experiências a novas oportunidades. 
             Acreditamos no poder da música para <strong>inspirar, unir e gerar impacto</strong>. Nossa missão é oferecer mais visibilidade a artistas independentes e profissionais do setor, ajudando-os a expandir suas carreiras.
           </p>

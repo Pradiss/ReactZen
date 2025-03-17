@@ -111,31 +111,31 @@ const EditarPerfil = ({ idUsuario }) => {
                             
                            
                             <div className="p-3 d-flex justify-content-between">
-                                <input type="text" className="form-control p-3 me-3 rounded-5" placeholder="Cidade" value={cidade} onChange={(e) => setCidade(e.target.value)} required />
+                                <input type="text" className="form-control p-3 me-3 rounded-5" placeholder="Cidade" value={cidade} onChange={(e) => setCidade(e.target.value)}  />
                                 <div>
-                                    <input type="text" className="form-control p-3 rounded-5" placeholder="Estado (UF)" value={uf} onChange={(e) => setUf(e.target.value)} required />
+                                    <input type="text" className="form-control p-3 rounded-5" placeholder="Estado (UF)" value={uf} onChange={(e) => setUf(e.target.value)}  />
 
                                 </div>
                             </div>
                             <div className="p-3 d-flex justify-content-between">
-                                <input type="text" className="form-control p-3 me-3 rounded-5" placeholder="Facebook" value={facebook} onChange={(e) => setFacebook(e.target.value)} required />
-                                <input type="text" className="form-control p-3 rounded-5" placeholder="Instagram" value={instagram} onChange={(e) => setInstagram(e.target.value)} required />
+                                <input type="text" className="form-control p-3 me-3 rounded-5" placeholder="Facebook" value={facebook} onChange={(e) => setFacebook(e.target.value)}  />
+                                <input type="text" className="form-control p-3 rounded-5" placeholder="Instagram" value={instagram} onChange={(e) => setInstagram(e.target.value)}  />
                             </div>
                             
                             <div className="p-3 d-flex justify-content-between">
-                                <input type="text" className="form-control p-3 me-3 rounded-5" placeholder="WhatsApp" value={whatsapp} onChange={(e) => setWhatsapp(e.target.value)} required />
+                                <input type="text" className="form-control p-3 me-3 rounded-5" placeholder="WhatsApp" value={whatsapp} onChange={(e) => setWhatsapp(e.target.value)}  />
                                 <div>
-                                <input type="number" step="0.01" className="form-control p-3 rounded-5" placeholder="Preço" value={preco} onChange={(e) => setPreco(e.target.value)} required />
+                                <input type="number" step="0.01" className="form-control p-3 rounded-5" placeholder="Preço" value={preco} onChange={(e) => setPreco(e.target.value)}  />
 
                                 </div>
                             </div>
                             
                             <div className="p-3">
-                                <input type="text" className="form-control p-3 rounded-5" placeholder="Coloque o link da foto" value={foto} onChange={(e) => setFoto(e.target.value)} required />
+                                <input type="text" className="form-control p-3 rounded-5" placeholder="Coloque o link da foto" value={foto} onChange={(e) => setFoto(e.target.value)}  />
                             </div>
 
                             <div className="p-3 d-flex justify-content-between">
-                                <textarea className="form-control p-3 rounded-5" placeholder="Descrição" value={descricao} onChange={(e) => setDescricao(e.target.value)} required />
+                                <textarea className="form-control p-3 rounded-5" placeholder="Descrição" value={descricao} onChange={(e) => setDescricao(e.target.value)}  />
                             </div>
                            
                             <div className="my-3">

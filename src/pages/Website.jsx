@@ -144,7 +144,7 @@ const Website = () => {
         <div className="container space ">
           <div>
             <h2 className="display-3   "> Melhores Musicos</h2>
-            <p className="my-5 w-50">
+            <p className="my-5 w-75">
               Conheça os talentosos músicos freelancers que, com sua habilidade
               e paixão pela música, oferecem performances e serviços
               excepcionais, criando experiências únicas para cada projeto.
@@ -261,7 +261,7 @@ const Website = () => {
                   talentos e impulsiona a cena musical.
                 </p>
                 <div className="my-5">
-                  <a href="/cadastro" class="btnDefault ">
+                  <a href="/sobre" class="btnDefault ">
                     Saiba Mais<i className="bi bi-arrow-right ms-4"></i>
                   </a>
                 </div>
