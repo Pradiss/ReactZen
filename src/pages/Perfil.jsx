@@ -49,11 +49,11 @@ const Perfil = () => {
                                     <div className='d-flex flex-column align-items-center text-center'>
                                     <img src={usuarios?.foto || "/default-avatar.png"} alt="Foto do usuário" className="rounded-5 shadow w-100"/>
 
-                                        <div className='mt-3 p-4 text-light'>
+                                        <div className=' p-4 text-light'>
                                         
                                         <h3 className='text-black'>{usuarios?.nome || "Carregando..."}</h3>
-                                        <p className='text-secondary mb-1'>{usuarios?.idInstrumento || "N/A"}</p> 
-                                        <p className='text-secondary mb-1'>{usuarios?.cidade || "N/A"} | {usuarios?.uf || "N/A"}</p>
+                                        <p className='text-secondary mb-1'>{usuarios.idInstrumento} | {usuarios.idCategoria} </p> 
+                                        <p className='text-secondary mb-1'>{usuarios.cidade} | {usuarios.uf}</p>
 
                                         
                                         </div>
@@ -85,13 +85,14 @@ const Perfil = () => {
                                     <li className='list-group-item d-flex justify-content-between align-items-center flex-wrap'>
                                         <h6 className='mb-0'><i className='mx-1 bi bi-facebook'></i> Facebook</h6>
                                         <a href={usuarios?.facebook || "#"} target="_blank" rel="noopener noreferrer" className='text-secondary'>
-                                            {usuarios?.facebook || "Não disponível"}
+                                            {usuarios.facebook}
                                         </a>
                                     </li>
 
                                 </ul>
                             
                             </div>
+                            
 
                             </div>
 
@@ -165,7 +166,7 @@ const Perfil = () => {
 
 
                         </div>
-                                    <div className='col-sm-12 col-md-12 ' >
+                                    <div className='col-sm-12 col-md-12 mt-3' >
                                         <div className='card text-dark  rounded-5 p-3 '>
                                             <div className='card-body rounded '>
                                                 <div className='row'>

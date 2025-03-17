@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const EditarPerfil = ({ userId }) => {
+const EditarPerfil = ({ idUsuario }) => {
     const [usuario, setUsuario] = useState("");
     const [nome, setNome] = useState("");
     const [foto, setFoto] = useState("");
@@ -22,7 +22,7 @@ const EditarPerfil = ({ userId }) => {
 
     // Buscar dados do usuário ao carregar a página
     useEffect(() => {
-        axios.get(`http://localhost:8000/api/usuarios/${userId}`)
+        axios.get(`http://localhost:8000/api/usuarios/${idUsuario}`)
             .then((res) => {
                 const data = res.data;
                 setUsuario(data.usuario);
@@ -42,7 +42,7 @@ const EditarPerfil = ({ userId }) => {
                 setIdInstrumento(data.idInstrumento);
             })
             .catch(() => setErro("Erro ao carregar os dados do usuário."));
-    }, [userId]);
+    }, [idUsuario]);
 
     // Função para atualizar perfil
     const handleEditarPerfil = (e) => {
@@ -66,7 +66,7 @@ const EditarPerfil = ({ userId }) => {
             idInstrumento: parseInt(idInstrumento),
         };
 
-        axios.put(`http://localhost:8000/api/usuarios/${userId}`, dadosAtualizados)
+        axios.put(`http://localhost:8000/api/usuarios/${idUsuario}`, dadosAtualizados)
             .then(() => {
                 setSucesso("Perfil atualizado com sucesso!");
                 setErro("");
@@ -130,6 +130,9 @@ const EditarPerfil = ({ userId }) => {
                                 </div>
                             </div>
                             
+                            <div className="p-3">
+                                <input type="text" className="form-control p-3 rounded-5" placeholder="Coloque o link da foto" value={foto} onChange={(e) => setFoto(e.target.value)} required />
+                            </div>
 
                             <div className="p-3 d-flex justify-content-between">
                                 <textarea className="form-control p-3 rounded-5" placeholder="Descrição" value={descricao} onChange={(e) => setDescricao(e.target.value)} required />

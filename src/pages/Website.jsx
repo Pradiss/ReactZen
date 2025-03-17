@@ -166,67 +166,66 @@ const Website = () =>{
                             </div>
                            
                 
-                            <div class="mt-5 col-lg-6 col-md-12 col-sm-0  p-5">
-                                <h5 class="">sobre nos</h5>
-                                <h2 class="display-2 mb-5 ">Quem somos nós?</h2>
-                                <p className="pb-5 ">Somos uma empresa focada em revolucionar o mercado da música nacional,
-                                    possibilitando músicos novos e mais experientes a terem mais visibilidade.
-                                    Já somos mais de 1 milhão de pessoas na nossa comunidade, e planejamos continuar a expandir.</p>
-                    
-                            <div className="my-5 ">
+                            <div class="mt-5 col-lg-6 col-md-12 col-sm-0  p-5 ">
+                                    <h5 class="">sobre nos</h5>
+                                    <h2 class="display-4">Quem somos nós</h2>
+                                        <p class="mt-4">
+                                            Somos uma plataforma dedicada a transformar o mercado da música nacional, conectando músicos de todos os estilos e experiências a novas oportunidades.  
+                                            Acreditamos no poder da música para inspirar, unir e gerar impacto. Nossa missão é oferecer mais visibilidade a artistas independentes e profissionais do setor, ajudando-os a expandir suas carreiras.  
+                                        </p>
+                                        <p class="mt-3">
+                                            Já somos uma comunidade com mais de <strong>1 milhão de pessoas</strong>  e estamos crescendo! Junte-se a nós e faça parte desse movimento que valoriza talentos e impulsiona a cena musical.
+                                        </p>
+                                    <div className="my-5">
 
-                                    <a href="/cadastro" class="btnDefault">Inscreva-se agora<i className="bi bi-arrow-right ms-4"></i></a>
-                            </div>
+                                        <a href="/cadastro" class="btnDefault ">Inscreva-se agora<i className="bi bi-arrow-right my-4"></i></a>
+                                    </div>
+                               
                             </div>
                         </div>
                     </div>
                 </section>
                             
                 <section class="space bg-lite sectionRadiusEnd">
-        
-                    <div class="container ">
-                        <div class="row  ">
-                            
-                            <div class="mt-5 col-lg-12 col-md-12 col-sm-0 px-4 px-0 pb-4 ">
-                            
-                                <h2 class=" display-4">Planos para entrar nos mais ranqueados</h2>
-                                <p>*Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut at possimus distinctio ipsa illo vero architecto a rem autem sit rerum officiis qui eveniet fugiat natus, voluptatibus error repellat accusamus.</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="mt-5 col-lg-12 col-md-12 col-sm-0 px-4 px-0 pb-4">
+                                <h2 class="display-4">Cadastre-se e Dê o Próximo Passo na Sua Carreira Musical</h2>
+                                <p>Seja você um músico solo, uma banda ou um profissional da música, o cadastro no nosso site é simples e te coloca no radar de quem está procurando talentos como o seu. Siga os passos abaixo e faça parte da nossa comunidade musical.</p>
                                 <div class="row mt-5">
                                     
-                                    <div class="col-md-3  card shadow rounded-5">
-                                    <div class="p-4 text-start">
-                                        <h5 class="">Special title treatment</h5>
-                                        <p class="">With supporting text below as a natural lead-in to additional content.</p>
-                                        <a href="#"id="btnCard">Go somewhere</a>
-                                    </div>
-                                    </div>
-                                    
-                                    
-                                    <div class="col-md-3  card shadow rounded-5">
-                                    <div class="p-4 text-start">
-                                        <h5 class="">Special title treatment</h5>
-                                        <p class="">With supporting text below as a natural lead-in to additional content.</p>
-                                        <a href="#"id="btnCard">Go somewhere</a>
-                                    </div>
-                                    </div>
-                                    
-                                    <div class="col-md-3  card shadow rounded-5">
-                                    <div class="p-4 text-start">
-                                        <h5 class="">Special title treatment</h5>
-                                        <p class="">With supporting text below as a natural lead-in to additional content.</p>
-                                        <a href="#"id="btnCard">Go somewhere</a>
-                                    </div>
+                                    <div class="col-md-3 ">
+                                        <div class="p-4 card shadow rounded-5 text-start">
+                                            <h5 class="fw-bold">1. Crie Seu Perfil</h5>
+                                            <p class="text-muted">Cadastre-se gratuitamente e preencha suas informações, incluindo seu estilo musical, especialidades e redes sociais.</p>
+                                            <a href="#" id="btnCard" class="btn btn-primary">Cadastre-se Agora</a>
+                                        </div>
                                     </div>
 
-                                    <div class="col-md-3  card shadow rounded-5">
-                                    <div class="p-4 text-start">
-                                        <h5 class="">Special title treatment</h5>
-                                        <p class="">With supporting text below as a natural lead-in to additional content.</p>
-                                        <a href="#"id="btnCard">Go somewhere</a>
+                                    <div class="col-md-3 ">
+                                        <div class="card shadow rounded-5 p-4 text-start">
+                                            <h5 class="fw-bold">2. Mostre Seu Talento</h5>
+                                            <p class="text-muted">Adicione vídeos, áudios e fotos para apresentar seu trabalho e atrair contratantes e fãs.</p>
+                                            <a href="#" id="btnCard" class="btn btn-primary">Adicionar Portfólio</a>
+                                        </div>
                                     </div>
+
+                                    <div class="col-md-3 ">
+                                        <div class="p-4 card shadow rounded-5 text-start">
+                                            <h5 class="fw-bold">3. Conecte-se com Oportunidades</h5>
+                                            <p class="text-muted">Explore eventos, gigs e convites de produtores. Negocie diretamente com quem precisa do seu talento.</p>
+                                            <a href="#" id="btnCard" class="btn btn-primary">Procurar Gigs</a>
+                                        </div>
                                     </div>
-                                    
-                                    
+
+                                    <div class="col-md-3 ">
+                                        <div class="p-4 card shadow rounded-5 text-start">
+                                            <h5 class="fw-bold">4. Comece a Monetizar</h5>
+                                            <p class="text-muted">Receba pagamentos por shows, participações e licenciamento de músicas. Transforme sua arte em renda!</p>
+                                            <a href="#" id="btnCard" class="btn btn-primary">Saiba Mais</a>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -245,12 +244,11 @@ const Website = () =>{
                     <div class="container borderRadius  p-5 sombra  bgBlack d-flex"> 
                         <div class="row">
                             <div class="mt-5 col-lg-6 col-md-12 col-sm-0 px-4 px-0 pb-4 text-white">
-                                <h2 class="display-4" >Freelancer e Bandas da sua Região</h2>
-                                <p class='mt-4'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe laboriosam deleniti tenetur quibusdam voluptatum deserunt obcaecati animi 
-                                    optio iste minus possimus consectetur suscipit porro.</p>
+                            <h2 class="display-4">Freelancers e Bandas da Sua Região</h2>
+                            <p class='mt-4'>Conecte-se com músicos e freelancers perto de você e encontre oportunidades no mercado musical. Seja você um artista solo, uma banda ou um profissional da música, nosso site facilita conexões e parcerias. Aqui, você pode divulgar seu trabalho, encontrar eventos, contratar talentos e expandir sua rede profissional.</p>
                                 <div className="my-5 pt-4">
 
-                                    <a href="/cadastro" class="btnWhite">Veja todas as Categorias<i className="bi bi-arrow-right ms-4"></i></a>
+                                    <a href="/categorias" class="btnWhite">Veja todas as Categorias<i className="bi bi-arrow-right ms-4"></i></a>
                                 </div>
                         
                                
