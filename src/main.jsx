@@ -18,10 +18,14 @@ import Suporte from './pages/Suporte.jsx'
 import EditarPerfil from './pages/Editar.jsx'
 
 
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
         <Routes>
+        
+
           <Route path="/perfil/:idUsuario" element={<Perfil/>}/>
           <Route path="/" element={<Website/>}/>
           <Route path="/login" element={<Login/>}/>

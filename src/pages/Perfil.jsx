@@ -251,8 +251,9 @@ const Perfil = () => {
                                                 <hr/>
                                                 <div className='col-sm-12  py-4'>
                                                 <Link to={`/editar/${idUsuario}`} className="btnDefault">
-                                                 Editar <i className="bi bi-arrow-right ms-4"></i>
-                                                    </Link>
+    Editar <i className="bi bi-arrow-right ms-4"></i>
+</Link>
+
                                                 </div>
                                             </div>
                                         </div>

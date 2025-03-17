@@ -35,8 +35,8 @@ const Login = () => {
                 <div className="row d-flex justify-content-center align-items-center h-100">
                     <div className="col-12 col-md-8 col-lg-6 col-xl-5">
                         <div className="bg-white text-dark rounded-5 p-5 text-center">
-                            <h1 className="mb-2 display-3 fw-medium text-capitalize">Olá Músico</h1>
-                            <p className="text-dark-50 mb-4">Bem-vindo ao <strong>Zen</strong>!!</p>
+                            <h2 className="mb-2 text-capitalize">Olá Músico</h2>
+                            <p className="text-dark-50 mb-4">Bem-vindo ao Zene!!</p>
 
                             <form onSubmit={handleLogin}>
                                 <div className='p-3'>
