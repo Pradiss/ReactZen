@@ -33,13 +33,36 @@ const Categorias = () => {
 //     },
 //   }
 
+     // Retrieve the user ID from localStorage
+    //  const idUsuario = localStorage.getItem("idUsuario"); // This will be a string
+ 
+    //  console.log("User  ID from localStorage:", userId);
+     
+    //  const authHeader = {
+    //      headers: {
+    //          Authorization: `Basic ${btoa('admin@example.com:password')}`,
+    //          // Authorization: `Bearer ${token}`,
+    //      },
+    //  };
+ 
+     useEffect(() => {
+        //  if (!idUsuario) {
+        //      console.error("User  ID is not available");
+        //      return; // Exit if userId is not available
+        //  }
+ 
+         // Fetch user data using the retrieved user ID
+         axios.get(`http://localhost:8000/api/usuarios`) 
+             .then((resposta) => setUsuarios(resposta.data))
+             .catch((error) => console.error("ERROR", error));
+     }, []); // The effect depends on userId
     
 
-    useEffect(() => {
-        axios.get(`http://localhost:8000/api/usuarios`) 
-             .then((resposta) => setUsuarios(resposta.data))
-             .catch((error) => console.error("ERROR", error))
-     }, [])
+    // useEffect(() => {
+    //     axios.get(`http://localhost:8000/api/usuarios`) 
+    //          .then((resposta) => setUsuarios(resposta.data))
+    //          .catch((error) => console.error("ERROR", error))
+    //  }, [])
 
      const filtrarUsuarios = () => {
         const params = {}

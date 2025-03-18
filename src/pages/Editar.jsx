@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const EditarPerfil = ({ idUsuario }) => {
-    const [usuario, setUsuario] = useState("");
+
+const EditarPerfil = () => {
+    const idUsuario = localStorage.getItem("idUsuario");
+    
     const [nome, setNome] = useState("");
     const [foto, setFoto] = useState("");
     const [idade, setIdade] = useState("");
@@ -25,7 +27,6 @@ const EditarPerfil = ({ idUsuario }) => {
         axios.get(`http://localhost:8000/api/usuarios/${idUsuario}`)
             .then((res) => {
                 const data = res.data;
-                setUsuario(data.usuario);
                 setNome(data.nome);
                 setFoto(data.foto);
                 setIdade(data.idade);
@@ -49,7 +50,7 @@ const EditarPerfil = ({ idUsuario }) => {
         e.preventDefault();
 
         const dadosAtualizados = {
-            usuario,
+            
             nome,
             foto,
             idade: parseInt(idade),
