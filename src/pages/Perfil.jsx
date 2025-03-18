@@ -6,35 +6,34 @@ import { Link } from "react-router-dom";
 
 const Perfil = () => {
     const [usuarios, setUsuarios] = useState([]);
-    const usuarioLogado = JSON.parse(localStorage.getItem("usuario"));
-    const idUsuario = usuarioLogado?.id || 1; // Substitua 1 por um valor padrão se necessário
+    
+    // Retrieve the user ID from localStorage
+    const idUsuario = localStorage.getItem("idUsuario"); // This will be a string
 
+    // Optional: Convert to a number if necessary
+    const userId = idUsuario ? parseInt(idUsuario, 10) : null;
 
-    // const token = localStorage.getItem("token");
-    //const token = "247fc3f23a4187f3a070dc46c067928e3d1614adfed2691e2d482dfc3d5d4575542343452ca44f3e";
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    console.log("User  ID from localStorage:", userId);
+    
     const authHeader = {
-      headers: {
-         Authorization: `Basic ${btoa('admin@example.com:password')}`,
-        //Authorization: `Bearer ${token}`,
-      },
-    }
+        headers: {
+            Authorization: `Basic ${btoa('admin@example.com:password')}`,
+            // Authorization: `Bearer ${token}`,
+        },
+    };
 
     useEffect(() => {
-        const idUsuario = 1; // Substitua isso pelo ID do usuário autenticado
-        axios.get(`http://localhost:8000/api/usuarios/${idUsuario}`, authHeader) 
-            .then((resposta) => setUsuarios(resposta.data))
-            .catch((error) => console.error("ERROR", error));
-    }, []); // Removido `authHeader` da dependência
-    
-    useEffect(() => {
-        if (!idUsuario) return; // Evita erro caso idUsuario seja undefined
-        axios.get(`http://localhost:8000/api/usuarios/${idUsuario}`, authHeader) 
-            .then((resposta) => setUsuarios(resposta.data))
-            .catch((error) => console.error("ERROR", error));
-    }, [idUsuario]); // Agora o efeito depende do ID do usuário
-    
+        if (!userId) {
+            console.error("User  ID is not available");
+            return; // Exit if userId is not available
+        }
 
+        // Fetch user data using the retrieved user ID
+        axios.get(`http://localhost:8000/api/usuarios/${userId}`, authHeader) 
+            .then((resposta) => setUsuarios(resposta.data))
+            .catch((error) => console.error("ERROR", error));
+    }, [userId]); // The effect depends on userId
+    
     return (
     <>
         <Header/>

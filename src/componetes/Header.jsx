@@ -22,7 +22,7 @@ const Header = () => {
     
       <div class="ms-3">
         <a class="navbar-brand "   href="/" src="">
-          <img class="w-100" src="./src/assets/react.svg"/>
+          <img class="w-50" src="./src/assets/logoBlack.png"/>
           
         </a>
 

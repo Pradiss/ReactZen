@@ -19,7 +19,13 @@ const Login = () => {
                 { headers: { "Content-Type": "application/json" } }
             );
     
-            console.log("Resposta da API:", response.data);
+          // Extract the idUsuario from the response
+          const idUsuario = response.data.usuario.idUsuario;
+
+          console.log(idUsuario);
+          
+          // Store the idUsuario in localStorage
+          localStorage.setItem("idUsuario", idUsuario);
     
             
             navigate("/");
