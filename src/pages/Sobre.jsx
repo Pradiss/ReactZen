@@ -8,14 +8,14 @@ const Sobre = () => {
     <div className="sectionRadiusTop">
 
   
-    <div className="container  ">
+    <div className="container space">
       
-      <section className="text-start space">
+      {/* <section className="text-start space">
         <h1 className=" fw-medium">Sobre Nós</h1>
         <p className="text-muted fs-5">
           Conheça a história por trás da plataforma que está revolucionando o mercado musical.
         </p>
-      </section>
+      </section> */}
 
       
       <section className="row align-items-center   ">
@@ -29,7 +29,7 @@ const Sobre = () => {
         <div className="col-lg-6 mt-5" data-aos="fade-left">
           <h2 className="fw-bold display-4">Dos Salões do Senac para o Mundo</h2>
           <p className="text-muted mt-4 fs-5">
-            Nossa jornada começou no <strong>Senac Campinas</strong>, onde um grupo de alunos apaixonados por música e tecnologia teve a ideia de criar uma plataforma que conectasse músicos a novas oportunidades. 
+            Nossa jornada começou no <strong>Senac Limeira</strong>, onde um grupo de alunos apaixonados por música e tecnologia teve a ideia de criar uma plataforma que conectasse músicos a novas oportunidades. 
             O que começou como um projeto acadêmico, rapidamente se tornou uma solução inovadora para a cena musical nacional.
           </p>
         </div>
@@ -56,7 +56,7 @@ const Sobre = () => {
       
    
 
-                <section class="space">
+                <section class="">
                     <div class="container borderRadius  p-5 sombra  bgBlack d-flex"> 
                         <div class="row">
                             <div class="mt-5 col-lg-6 col-md-12 col-sm-0 px-4 px-0 pb-4 text-white">

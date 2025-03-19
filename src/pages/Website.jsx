@@ -56,15 +56,15 @@ const Website = () => {
           </div>
 
           <div className="carousel-inner sectionRadius sombra ">
-            <div className="carousel-item active">
+            <div className="carousel-item active  overlay">
               <img
                 src="https://img.freepik.com/fotos-gratis/banda-de-tiro-medio-se-apresentando-em-um-show_23-2149162991.jpg?t=st=1742245196~exp=1742248796~hmac=ff3f13747df55a980ea892e225d33299846addcbaa46e22fee2fe1510a313c7c&w=996"
                 className="d-block w-100 "
                 alt="..."
               />
-              <div className="carousel-caption  text-start my-5 py-5 ">
+              <div className="carousel-caption  text-start my-5 py-5  ">
                 <h1 className="display-1 fw-medium text-blak  ">
-                  Banda de jonh Lennon
+                  Bandas de Gabrielly
                 </h1>
                 <p className="mb-5">
                   Melhores Bandas 
@@ -75,18 +75,17 @@ const Website = () => {
               </div>
             </div>
 
-            <div className="carousel-item">
+            <div className="carousel-item  overlay ">
               <img
                 src="https://img.freepik.com/fotos-gratis/mulher-cantando-no-microfone_107420-96132.jpg?t=st=1742245238~exp=1742248838~hmac=3aa8d701afcfdb57b01eb3a30fd85674e4b458feed2e97cc1bf6d58a34b7b9c8&w=996"
                 className="d-block w-100"
                 alt="..."
               />
-              <div className="carousel-caption  text-start my-5 py-5 ">
-                <h1 className="display-1 fw-medium text-warning ">
-                  First slide label
+              <div className="carousel-caption  text-start my-5 py-5   " id="over">
+                <h1 className="display-1 fw-medium  ">
+                 Melhores Bandas Aqui na zen
                 </h1>
                 <p className="mb-5">
-                  Some representative placeholder content for the first slide.
                 </p>
                 <a href="/" className="btnWhite ">
                   Acesse aqui
@@ -94,18 +93,17 @@ const Website = () => {
               </div>
             </div>
 
-            <div className="carousel-item">
+            <div className="carousel-item  overlay">
               <img
                 src="https://img.freepik.com/fotos-gratis/mulher-apresentando-musica-ao-vivo-em-um-evento-local_23-2149188092.jpg?t=st=1742246214~exp=1742249814~hmac=813770ec07bdafa88e0bf48bee22c8fa4061a3632d279e53d2b0929e4cdd6e2e&w=996"
                 className="d-block w-100"
                 alt="..."
               />
               <div className="carousel-caption  text-start my-5 py-5 ">
-                <h1 className="display-1 fw-medium text-warning ">
-                  First slide label
+                <h1 className="display-1 fw-medium  ">
+                  Cadastre-se já
                 </h1>
                 <p className="mb-5">
-                  Some representative placeholder content for the first slide.
                 </p>
                 <a href="/" className="btnWhite ">
                   Acesse aqui
@@ -190,10 +188,7 @@ const Website = () => {
             <div className="  ">
               <h2 class=" display-3  ">Confira nossas categorias</h2>
               <p class=" mt-4 w-75">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Officia commodi velit, nam, sapiente eos iste quasi tenetur
-                exercitationem vitae corporis, ipsa minus. Quasi nisi eius
-                nostrum ipsa ut. Quidem, culpa?
+              Explore uma variedade de músicos talentosos em diferentes estilos e especialidades. Seja você um amante da música ou alguém em busca do músico perfeito para o seu evento, temos categorias para todos os gostos.
               </p>
 
               <hr className="espacamento w-50 align-items-center" />
@@ -210,7 +205,7 @@ const Website = () => {
                         alt="..."
                       />
                       <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                        <h3 class=" text-white ">
+                        <h3 class="  display-4 fw-medium ">
                           {objCategorias.generoMusical}
                         </h3>
                       </div>

@@ -221,12 +221,30 @@ h5{
 }
 
 
-.overlay{
+.overlay {
+    position: relative; /* Garantir que a sobreposição esteja sobre a imagem */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro com 90% de opacidade */
    
-    
-    opacity: 0.89;
 }
 
+.overlay::before {
+    border-radius: 30px;
+    content: ''; /* Cria um pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Escurece o fundo com opacidade */
+    z-index: 1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
+#overlay h3,h1,a {
+    color: #BEE4ED; /* Cor do texto */
+    position: relative; /* Garante que o texto fique acima do pseudo-elemento */
+    z-index: 2; /* Coloca o texto sobre o fundo */
+   
+}
 
 
 

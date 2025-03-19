@@ -2,37 +2,38 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Header from "../componetes/Header";
 import Footer from "../componetes/Footer";
-import { Link } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 
 const Perfil = () => {
-    const [usuarios, setUsuarios] = useState([]);
+    const { idUsuario} = useParams()
+    const [usuarios, setUsuarios] = useState([])
     
     // Retrieve the user ID from localStorage
-    const idUsuario = localStorage.getItem("idUsuario"); // This will be a string
+    const idUsuarioLogado = localStorage.getItem("idUsuario"); // This will be a string
 
     // Optional: Convert to a number if necessary
-    const userId = idUsuario ? parseInt(idUsuario, 10) : null;
-
-    console.log("User  ID from localStorage:", userId);
     
-    const authHeader = {
-        headers: {
-            Authorization: `Basic ${btoa('admin@example.com:password')}`,
-            // Authorization: `Bearer ${token}`,
-        },
-    };
 
+    
+    
+    
     useEffect(() => {
-        if (!userId) {
+        const authHeader = {
+            headers: {
+                Authorization: `Basic ${btoa('admin@example.com:password')}`,
+                // Authorization: `Bearer ${token}`,
+            },
+        };
+        if (!idUsuario) {
             console.error("User  ID is not available");
-            return; // Exit if userId is not available
+            return; // Exit if idUsuario is not available
         }
 
         // Fetch user data using the retrieved user ID
-        axios.get(`http://localhost:8000/api/usuarios/${userId}`, authHeader) 
+        axios.get(`http://localhost:8000/api/usuarios/${idUsuario}`, authHeader) 
             .then((resposta) => setUsuarios(resposta.data))
             .catch((error) => console.error("ERROR", error));
-    }, [userId]); // The effect depends on userId
+    }, [idUsuario]); // The effect depends on userId
     
     return (
     <>
@@ -113,17 +114,17 @@ const Perfil = () => {
 
                                         <div className='carousel-inner rounded-5 '>
                                         <div className='carousel-item active'>
-                                            <img src='./src/assets/bandateste1.svg' className='d-block w-100' alt='...'/>
+                                            <img src="https://img.freepik.com/fotos-gratis/mulher-cantando-no-microfone_107420-96132.jpg?t=st=1742245238~exp=1742248838~hmac=3aa8d701afcfdb57b01eb3a30fd85674e4b458feed2e97cc1bf6d58a34b7b9c8&w=996" className='d-block w-100' alt='...'/>
                                             
                                         </div>
 
                                         <div className='carousel-item'>
-                                            <img src='./src/assets/bandateste1.svg' className='d-block w-100' alt='...'/>
+                                        <img src="https://img.freepik.com/fotos-gratis/mulher-cantando-no-microfone_107420-96132.jpg?t=st=1742245238~exp=1742248838~hmac=3aa8d701afcfdb57b01eb3a30fd85674e4b458feed2e97cc1bf6d58a34b7b9c8&w=996" className='d-block w-100' alt='...'/>
                                             
                                         </div>
 
                                         <div className='carousel-item'>
-                                            <img src='./src/assets/bandateste1.svg' className='d-block w-100' alt='...'/>
+                                        <img src="https://img.freepik.com/fotos-gratis/mulher-cantando-no-microfone_107420-96132.jpg?t=st=1742245238~exp=1742248838~hmac=3aa8d701afcfdb57b01eb3a30fd85674e4b458feed2e97cc1bf6d58a34b7b9c8&w=996" className='d-block w-100' alt='...'/>
                                             
                                         </div>
                                         
@@ -250,10 +251,13 @@ const Perfil = () => {
                                                 </div>
                                                 <hr/>
                                                 <div className='col-sm-12  py-4'>
-                                                <Link to={`/editar/${idUsuario}`} className="btnDefault">
-                                                     Editar <i className="bi bi-arrow-right ms-4"></i>
-                                                </Link>
+                                                {idUsuario === idUsuarioLogado && (
+                                                    <div className="text-start">
+                                                        <a href={`/editar/${idUsuario}`} className="btnDefault">editar Perfil</a>
+                                                    </div>
+                                                )
 
+                                                }
                                                 </div>
                                             </div>
                                         </div>

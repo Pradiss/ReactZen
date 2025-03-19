@@ -1,18 +1,12 @@
 import { Link } from "react-router-dom";
-import React, { useEffect, useState} from "react"
-import axios from "axios";
-import SearchPage from "../pages/SearchPage";
+
+
 import SearchBar from "../pages/SearchBar";
 
 
 const Header = () => {
-  const [usuarios, setUsuarios] = useState([])
-  
-  useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/api/usuarios`)
-         .then((resposta) => setUsuarios(resposta.data))
-         .catch((error) => console.error("ERROR", error))
- }, [])
+
+  const idUsuarioLogado = localStorage.getItem("idUsuario");
 
   return (
  
@@ -22,7 +16,7 @@ const Header = () => {
     
       <div class="ms-3">
         <a class="navbar-brand "   href="/" src="">
-          <img class="w-50" src="./src/assets/logoBlack.png"/>
+          <img class="w-50" src="./src/assets/logoBlue.png"/>
           
         </a>
 
@@ -73,7 +67,10 @@ const Header = () => {
                 <a class="nav-link   " aria-current="page" href="/sobre">Sobre Nós</a>
               </li>
               <li class="bborder nav-item rounded-5 p-3 ">
-                <Link class="nav-link " to={`/perfil/${usuarios.idUsuario}`}>Perfil</Link>
+                {idUsuarioLogado && (
+                  <Link class="nav-link " to={`/perfil/${idUsuarioLogado}`}>Perfil</Link>
+
+                )}
               </li>
               <li class="nav-item dropdown me-5">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

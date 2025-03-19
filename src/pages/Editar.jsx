@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Header from "../componetes/Header";
 
 
 const EditarPerfil = () => {
@@ -10,7 +11,7 @@ const EditarPerfil = () => {
     const [idade, setIdade] = useState("");
     const [descricao, setDescricao] = useState("");
     const [email, setEmail] = useState("");
-    const [senha, setSenha] = useState("");
+    
     const [cidade, setCidade] = useState("");
     const [uf, setUf] = useState("");
     const [preco, setPreco] = useState("");
@@ -32,7 +33,7 @@ const EditarPerfil = () => {
                 setIdade(data.idade);
                 setDescricao(data.descricao);
                 setEmail(data.email);
-                setSenha(""); // Não preencher senha por segurança
+              
                 setCidade(data.cidade);
                 setUf(data.uf);
                 setPreco(data.preco);
@@ -56,7 +57,7 @@ const EditarPerfil = () => {
             idade: parseInt(idade),
             descricao,
             email,
-            senha,
+            
             cidade,
             uf,
             preco: parseFloat(preco),
@@ -67,7 +68,9 @@ const EditarPerfil = () => {
             idInstrumento: parseInt(idInstrumento),
         };
 
-        axios.put(`http://localhost:8000/api/usuarios/${idUsuario}`, dadosAtualizados)
+        axios.put(`http://localhost:8000/api/usuarios/${idUsuario}`, dadosAtualizados
+            
+        )
             .then(() => {
                 setSucesso("Perfil atualizado com sucesso!");
                 setErro("");
@@ -79,6 +82,8 @@ const EditarPerfil = () => {
     };
 
     return (
+        <>
+        <Header/>
         <section className="vh-100 bg-lite">
             <div className="container">
                 <div className="row d-flex justify-content-center py-5">
@@ -149,6 +154,7 @@ const EditarPerfil = () => {
                 </div>
             </div>
         </section>
+        </>
     );
 };
 

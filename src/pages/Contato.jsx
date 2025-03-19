@@ -45,7 +45,7 @@ const Contato = () => {
                                 🕒 <strong>Segunda a Sexta</strong> <br />
                                 09:00 até as 18:00
                             </p>
-                            <p className="text-secondary mb-4">Nosso time de suporte é 24Hrs</p>
+                            <p className="text-secondary mb-4">Nossa equipe de suporte opera 24Hrs</p>
 
                             <h5 className="text-secondary text-regular">Nosso contato</h5>
                             <hr />
