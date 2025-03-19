@@ -86,14 +86,14 @@ const Categorias = () => {
             <main>
                 <div className="container my-5">
                     <div className="row">
-                        <div className="col-md-4 rounded-5 p-4 shadow">
+                        <div className="col-md-4 rounded-5 p-4  ">
                             <h2 className="display-5 fw-bold"><i className="bi bi-x-diamond-fill me-2"></i>Filtros</h2>
                                 <hr></hr>
                             
                             
-                            <div className=" ">
+                            <div className="">
                                 
-
+                                
                                 <FiltroInstrumentos
                                 filtroInstrumento={filtroInstrumento}
                                 setFiltroInstrumento={setFiltroInstrumento}/>

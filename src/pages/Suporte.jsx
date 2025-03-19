@@ -55,7 +55,7 @@ const Suporte = () => {
             aria-labelledby="headingTwo"
             data-bs-parent="#supportAccordion">
             <div className="accordion-body">
-              Você pode buscar gigs, eventos e parcerias na aba "Oportunidades".
+              Você pode buscar clientes, eventos e parcerias na aba "Oportunidades".
               Basta filtrar por categoria e entrar em contato com os
               contratantes interessados no seu talento.
             </div>

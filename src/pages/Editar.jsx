@@ -74,6 +74,7 @@ const EditarPerfil = () => {
             .then(() => {
                 setSucesso("Perfil atualizado com sucesso!");
                 setErro("");
+               
             })
             .catch(() => {
                 setErro("Erro ao atualizar perfil.");
@@ -114,6 +115,41 @@ const EditarPerfil = () => {
                             {/* <div className="p-3">
                                 <input type="password" className="form-control p-3 rounded-5" placeholder="Senha (deixe em branco para não alterar)" value={senha} onChange={(e) => setSenha(e.target.value)} />
                             </div> */}
+
+                            <div className="p-3 d-flex">
+                                    
+                                    <select 
+                                        id="idInstrumento"
+                                        name="idInstrumento"
+                                        className="form-control p-3 me-3 rounded-5"
+                                        value={idInstrumento}
+                                        onChange={(e) => setIdInstrumento(e.target.value)}
+                                    >
+                                        <option value="" >Todos</option>
+                                        <option value="1">Violão</option>
+                                        <option value="2">Bateria</option>
+                                        <option value="3">Cavaco</option>
+                                        <option value="4">Cantor(a)</option>
+                                        <option value="5">Baixo</option>
+                                    </select>
+
+                                    <select 
+                                        id="idCategoria"
+                                        name="idCategoria"
+                                        className="form-control p-3 rounded-5"
+                                        value={idCategoria}
+                                        onChange={(e) => setIdCategoria(e.target.value)}
+                                    >
+                                        <option value="">Todas</option>
+                                        <option value="1">Samba</option>
+                                        <option value="2">Sertanejo</option>
+                                        <option value="3">Rock</option>
+                                        <option value="4">Pagode</option>
+                                        <option value="5">MPB</option>
+                                        <option value="6">DJ</option>
+                                    
+                                    </select>
+                                </div>
                             
                            
                             <div className="p-3 d-flex justify-content-between">
