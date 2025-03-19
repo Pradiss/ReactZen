@@ -152,7 +152,7 @@ const Website = () => {
           </div>
 
           <div className="row d-flex justify-content-center ">
-            {usuarios.map((objUsuarios) => (
+            {usuarios.filter((objUsuarios) => objUsuarios.avaliacao >= 4.5).map((objUsuarios) => (
               <div className="col-10 col-sm-6 col-md-6 col-lg-3 p-2  ">
                 <div className="rounded-5 p-3 sombra ">
                   <img
