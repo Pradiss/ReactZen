@@ -44,6 +44,27 @@ const Categorias = () => {
     //          // Authorization: `Bearer ${token}`,
     //      },
     //  };
+
+    const Instrumento = 
+        {
+            1: "Violão",
+            2: "Bateria",
+            3: "Cavaco",
+            4: "Cantor(a)",
+            5: "Baixo",
+            6: "Guitarra",
+            
+
+        }
+    
+    const Categorias = 
+    {
+        1: "Samba",
+        2: "Sertanejo",
+        3: "Rock",
+        4: "Pagode",
+        5: "MPB"
+    }
  
      useEffect(() => {
         //  if (!idUsuario) {
@@ -138,7 +159,7 @@ const Categorias = () => {
                                     <img src={objUsuarios.foto} className='card-img-top rounded-5' alt='...'/>
                                         <div className='my-3 text-center'>
                                             <h4 className='card-title text-blak mb-3'>{objUsuarios.nome}</h4>
-                                            <p className='text-secondary mb-1 text-dark '>{objUsuarios.idInstrumento} | {objUsuarios.idCategoria} </p>
+                                            <p className='text-secondary mb-1 text-dark '>{Instrumento[objUsuarios.idInstrumento]} | {Categorias[objUsuarios.idCategoria]} </p>
                                             
                                             <p className='card-text text-secondary mb-4'><i className="bi bi-house-fill"></i> {objUsuarios.cidade} | R$ {objUsuarios.preco}</p>
                                           <Link  to={`/perfil/${objUsuarios.idUsuario}`} id="btnCard">Perfil</Link>

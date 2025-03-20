@@ -10,6 +10,28 @@ const Website = () => {
   const [usuarios, setUsuarios] = useState([]);
   const [categorias, setCategorias] = useState([]);
 
+
+  const Instrumento = 
+        {
+            1: "Violão",
+            2: "Bateria",
+            3: "Cavaco",
+            4: "Cantor(a)",
+            5: "Baixo",
+            6: "Guitarra",
+            
+
+        }
+    
+    const Categorias = 
+    {
+        1: "Samba",
+        2: "Sertanejo",
+        3: "Rock",
+        4: "Pagode",
+        5: "MPB"
+    }
+ 
   useEffect(() => {
     axios
       .get(`http://localhost:8000/api/usuarios`)
@@ -162,12 +184,12 @@ const Website = () => {
                   />
                   <div className="text-center mb-4">
                     <h4 className="mt-4">{objUsuarios.nome}</h4>
-                    <p className="text-secondary mb-1 text-dark ">
-                      {objUsuarios.idInstrumento} | {objUsuarios.idCategoria}{" "}
+                    <p className="text-secondary my-3  ">
+                      {Instrumento[objUsuarios.idInstrumento]} | {Categorias[objUsuarios.idCategoria]}{" "}
                     </p>
 
                     <p className=" text-secondary mb-5">
-                      {objUsuarios.cidade} | {objUsuarios.preco}
+                      {objUsuarios.cidade} | R$ {objUsuarios.preco}
                     </p>
                     <Link
                       to={`/perfil/${objUsuarios.idUsuario}`}

@@ -14,7 +14,30 @@ const Perfil = () => {
     // Optional: Convert to a number if necessary
     
 
+
     
+    const Instrumento = 
+        {
+            1: "Violão",
+            2: "Bateria",
+            3: "Cavaco",
+            4: "Cantor(a)",
+            5: "Baixo",
+            6: "Guitarra",
+            
+
+        }
+    
+    const Categorias = 
+    {
+        1: "Samba",
+        2: "Sertanejo",
+        3: "Rock",
+        4: "Pagode",
+        5: "MPB"
+    }
+
+        console.log(usuarios.idInstrumento)
     
     
     useEffect(() => {
@@ -38,6 +61,7 @@ const Perfil = () => {
     return (
     <>
         <Header/>
+       
 
         <main className="bg-lite py-5 sectionRadiusTop" key={usuarios.IdUsuario}>
             <div className="container">
@@ -51,8 +75,12 @@ const Perfil = () => {
 
                                         <div className=' p-4 text-light'>
                                         
-                                        <h3 className='text-black'>{usuarios?.nome || "Carregando..."}</h3>
-                                        <p className='text-secondary mb-1'>{usuarios.idInstrumento} | {usuarios.idCategoria} </p> 
+                                        <h3 className='text-black'>{usuarios?.nome}</h3>
+                                        { 
+                                            <p className='text-secondary mb-1'>{Instrumento[usuarios.idInstrumento]} | {Categorias[usuarios.idCategoria]}</p>
+                                             }
+
+                                        
                                         <p className='text-secondary mb-1'>{usuarios.cidade} | {usuarios.uf}</p>
 
                                         
@@ -90,6 +118,7 @@ const Perfil = () => {
                                     </li>
 
                                 </ul>
+                                
                             
                             </div>
                             
@@ -253,7 +282,7 @@ const Perfil = () => {
                                                 <div className='col-sm-12  py-4'>
                                                 {idUsuario === idUsuarioLogado && (
                                                     <div className="text-start">
-                                                        <a href={`/editar/${idUsuario}`} className="btnDefault">editar Perfil</a>
+                                                        <a href={`/editar/${idUsuario}`} className="btnDefault">Editar Perfil</a>
                                                     </div>
                                                 )
 
